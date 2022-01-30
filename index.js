@@ -63,6 +63,10 @@ async function play(tries) {
   if (tries < MAX_TRIES) {
     // ask the player for a guess word
     const response = await prompts(wordlePrompt);
+    if (!response.word) {
+      console.log("You closed the game, Good bye!");
+      process.exit(0);
+    }
     const guess = response.word.toUpperCase(); // optional chaining
     if (typeof guess === "undefined") {
       // this scenario happens when a user presses Ctrl+C and terminates program
