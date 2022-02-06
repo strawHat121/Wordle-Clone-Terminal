@@ -1,6 +1,6 @@
 # Wordle Terminal
 
-A clone of the famous world clone built for the terminal.
+A clone of the famous wordle game built for the terminal.
 
 Original Wordle - [Wordle](https://www.powerlanguage.co.uk/wordle/)
 
